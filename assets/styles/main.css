@@ -1,0 +1,17 @@
+.dark-primary-color    { background: #004b7c; }
+.default-primary-color { background: #0071b0; }
+.light-primary-color   { background: #65b9e3; }
+.text-primary-color    { color: #FFFFFF; }
+.accent-color          { background: #FF5722; }
+.primary-text-color    { color: #212121; }
+.secondary-text-color  { color: #727272; }
+.divider-color         { border-color: #FF5722; }
+
+html {
+  font-family: 'nanami-book', sans-serif;
+}
+
+body {
+  background-color: #004b7C;
+  color: white;
+}
