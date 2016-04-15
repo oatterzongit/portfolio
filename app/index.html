@@ -8,27 +8,28 @@
   <!-- CSS  -->
   <link rel="stylesheet" href="/assets/fonts/nanami-book/nanami-book.otf"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
-  <link rel="stylesheet" href="/assets/styles/vendor/normalize.css">
-  <link rel="stylesheet" href="/assets/styles/vendor/materialize.min.css">
-  <link rel="stylesheet" href="/assets/styles/main.css">
+  <link rel="stylesheet" href="/styles/vendor/normalize.css">
+  <link rel="stylesheet" href="/styles/vendor/materialize.min.css">
+  <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
 
 <header>
   <nav>
     <div class="nav-wrapper dark-primary-color">
+      <a href="#!" class="brand-logo">{oat:asdon}</a>
       <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
@@ -38,7 +39,7 @@
 <div id="index-banner" class="parallax-container">
   <div class="center section no-pad-bot">
     <div class="container"><br><br><br><br>
-      <h1 class="header center">{oat:asdon}</h1>
+      <h1 class="header center">Oat Asdon</h1>
       <div class="row center">
         <h5 class="header col s12 light white-text">Full-Stack Web Developer</h5>
       </div>
@@ -50,9 +51,9 @@
 <div class="container">
   <div class="section">
 
-    <div class="row">
+    <div class="row about">
       <div class="col s12 center">
-        <h3><i class="mdi-content-send brown-text"></i></h3>
+        <h3><i class="material-icons">face</i></h3>
         <h4>Who is Oat Asdon?</h4>
         <p class="left-align light">
           I am a full-stack web developer with passion and enthusiasm for learning, problem solving, and the art of coding that enables me to express my creativity! I am looking forward to working with a great team that shares the same passion and attitude towards programming and development. Additionally, I bring to the table my extensive sales experience, and customer-oriented solution building skills from my previous career into web development. I believe these skills sets would be especially useful when we pitch our ideas to potential investors or developing solutions with a current client. I look forward to gaining a deep level of understanding of this industry and furthering my abilities through my future team.         </p>
@@ -63,7 +64,7 @@
 </div>
 
   <div class="slider">
-    <ul class="slides">
+    <ul class="slides" id="projects">
       <li>
         <img src="/assets/images/bg-4.jpg"> <!-- random image -->
         <div class="caption center-align">
@@ -147,7 +148,7 @@
   <div class="container">
     <div class="section">
 
-      <div class="row">
+      <div class="row" id="resume">
         <div class="col s12 center">
           <h4>
             My Resume
@@ -178,26 +179,20 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Who is Oat?</h5>
-          <p class="grey-text text-lighten-4">This is placeholder text</p>
-
-
-        </div>
-        <!-- <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="white-text">My Projects</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="https://github.com/oatterzongit/scrumtious">SCRUM*TIOUS</a></li>
+            <li><a class="white-text" href="https://github.com/oatterzongit/ondex">ONDEX</a></li>
+            <li><a class="white-text" href="https://github.com/oatterzongit/panda_working">HUMANS OF PANDA</a></li>
           </ul>
-        </div> -->
-        <div class="col l3 s12">
+        </div>
+        <div class="col l3 s12" id="contact">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!">hello@oatasdon.com</a></li>
-            <li><a class="white-text" href="https://www.linkedin.com/in/oatasdon">LinkedIn</a></li>
-            <li><a class="white-text" href="#!">github.com/</a>GitHub</li>
+            <li><a class="white-text" href="mailto:oat@oatasdon.com?subject=Hello%20Oat!&amp;body=Hello%20Oat!%20I%20Would%20like%20to%20know%20more%20about%20you!">oat@oatasdon.com</a></li>
+            <li><a class="white-text" href="https://profiles.generalassemb.ly/profiles/oat">profiles.generalassemb.ly/profiles/oat</a></li>
+            <li><a class="white-text" href="https://www.linkedin.com/in/oatasdon">linkedin.com/in/oatasdon</a></li>
+            <li><a class="white-text" href="https://github.com/oatterzongit">github.com/oatterzongit</a></li>
           </ul>
         </div>
       </div>
@@ -211,9 +206,9 @@
 
 
   <!--  Scripts-->
-  <script src="/assets/scripts/vendor/jquery-2.2.2.min.js"></script>
-  <script src="/assets/scripts/vendor/materialize.min.js"></script>
-  <script src="/assets/scripts/main.js"></script>
+  <script src="/scripts/vendor/jquery-2.2.2.min.js"></script>
+  <script src="/scripts/vendor/materialize.min.js"></script>
+  <script src="/scripts/main.js"></script>
 
   </body>
 </html>
