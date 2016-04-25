@@ -1,4 +1,4 @@
-.dark-primary-color    { background: #004b7c; }
+.dark-primary-color    { background: #2980b9; }
 .default-primary-color { background: #0071b0; }
 .light-primary-color   { background: #65b9e3; }
 .text-primary-color    { color: #FFFFFF; }
@@ -12,10 +12,22 @@ html {
 }
 
 body {
-  background-color: #004b7C;
+  background-color: #2980b9;
   color: white;
 }
 
 .brand-logo {
   margin-left: 5px;
+}
+
+.brand-logo:hover {
+  color: #003d60;
+}
+
+.caption.center-align {
+  background: white;
+  background: -webkit-radial-gradient(rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0) 70%);
+  background: -o-radial-gradient(rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0) 70%);
+  background: -moz-radial-gradient(rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0) 70%);
+  background: radial-gradient(rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0) 70%);
 }
