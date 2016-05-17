@@ -9,12 +9,15 @@
 
 html {
   font-family: 'nanami-book', sans-serif;
+  height: 100%;
 }
 
 body {
   background-color: #2980b9;
   color: white;
+  height: 100%;
 }
+
 
 .brand-logo {
   margin-left: 5px;
@@ -31,3 +34,12 @@ body {
   background: -moz-radial-gradient(rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0) 70%);
   background: radial-gradient(rgba(255, 255, 255, 0.8) 40%, rgba(255, 255, 255, 0) 70%);
 }
+
+iframe, object, embed {
+  max-width: 100%;
+}
+
+.wrapper         {width:80%;height:100%;margin:0 auto;background:#CCC}
+.h_iframe        {position:relative;}
+.h_iframe .ratio {display:block;width:100%;height:auto;}
+.h_iframe iframe {position:absolute;top:0;left:0;width:100%; height:100%;}
