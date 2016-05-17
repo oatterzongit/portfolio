@@ -1,11 +1,5 @@
-.dark-primary-color    { background: #2980b9; }
-.default-primary-color { background: #0071b0; }
-.light-primary-color   { background: #65b9e3; }
-.text-primary-color    { color: #FFFFFF; }
+.dark-primary-color    { background: #34465d; }
 .accent-color          { background: #FF5722; }
-.primary-text-color    { color: #212121; }
-.secondary-text-color  { color: #727272; }
-.divider-color         { border-color: #FF5722; }
 
 html {
   font-family: 'nanami-book', sans-serif;
@@ -13,18 +7,14 @@ html {
 }
 
 body {
-  background-color: #2980b9;
-  color: white;
+  background-color: #34465d;
+  color: #ededed;
   height: 100%;
 }
 
 
 .brand-logo {
   margin-left: 5px;
-}
-
-.brand-logo:hover {
-  color: #003d60;
 }
 
 .caption.center-align {
@@ -43,3 +33,33 @@ iframe, object, embed {
 .h_iframe        {position:relative;}
 .h_iframe .ratio {display:block;width:100%;height:auto;}
 .h_iframe iframe {position:absolute;top:0;left:0;width:100%; height:100%;}
+
+.side-nav a {
+    color: #ededed;
+    display: block;
+    font-size: 2rem;
+    height: 75px;
+    line-height: 64px;
+    padding: 0 15px;
+}
+
+.side-nav {
+    position: fixed;
+    width: 240px;
+    left: -105%;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    height: calc(100% + 60px);
+    height: -moz-calc(100%);
+    padding-bottom: 60px;
+    background-color: #34465d;
+    z-index: 999;
+    overflow-y: auto;
+    will-change: left;
+}
+
+nav ul a:hover {
+    background-color: rgba(179, 179, 179, 0.86);
+    /*color: #616161;*/
+}

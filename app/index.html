@@ -2,10 +2,8 @@
 <html lang="en">
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
+  <meta name="viewport" content="width=device-width, maximum-scale=1.0, user-scalable=no"/>
   <title>{oat:asdon}</title>
-
-  <!-- CSS  -->
   <link rel="stylesheet" href="/assets/fonts/nanami-book/nanami-book.otf"/>
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
   <link rel="stylesheet" href="/styles/vendor/normalize.css">
@@ -13,7 +11,6 @@
   <link rel="stylesheet" href="/styles/main.css">
 </head>
 <body>
-
 <header>
   <nav>
     <div class="nav-wrapper dark-primary-color">
@@ -22,17 +19,28 @@
       <ul class="right hide-on-med-and-down">
         <li><a href="#">Home</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
+        <li><a class="modal-trigger" href="#modal1">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
       <ul class="side-nav" id="mobile-demo">
         <li><a href="#">Home</a></li>
         <li><a href="#projects">Projects</a></li>
-        <li><a href="#resume">Resume</a></li>
+        <li><a target="_blank" href="https://resume.creddle.io/resume/3zn5r0bf3w5">Resume</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
   </nav>
+  <!-- Resume Modal -->
+  <div id="modal1" class="modal modal-fixed-footer">
+    <div class="modal-content">
+      <h4 class="black-text">Resume</h4>
+      <iframe src="https://resume.creddle.io/embed/3zn5r0bf3w5"
+      width="850" height="1100" seamless></iframe>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class=" modal-action modal-close waves-effect waves-light btn-flat">Close</a>
+    </div>
+  </div>
 </header>
 
 
@@ -45,7 +53,7 @@
       </div>
     </div>
   </div>
-  <div class="parallax"><img src="/assets/images/bg-3.jpg"></div>
+  <div class="parallax"><img src="/assets/images/main-splash.jpg"></div>
 </div>
 
 <div class="container">
@@ -66,32 +74,16 @@
   <div class="slider">
     <ul class="slides" id="projects">
       <li>
-        <img src="/assets/images/octo.png" class="projects"> <!-- random image -->
-        <div class="caption center-align">
-          <h3><a href="https://github.com/oatterzongit/project_01">Octohedron</a></h3>
-          <h5 class="light blue-text shadow">Lose Yourself.</h5>
-        </div>
+        <img src="/assets/images/octo.png" class="projects">
       </li>
       <li>
-        <img src="/assets/images/scrumtious.png" class="projects"> <!-- random image -->
-        <div class="caption center-align">
-          <h3><a href="https://github.com/oatterzongit/scrumtious">SCRUM*TIOUS</a></h3>
-          <h5 class="light blue-text shadow">Savor your time.</h5>
-        </div>
+        <img src="/assets/images/scrumtious.png" class="projects">
       </li>
       <li>
-        <img src="/assets/images/ondex.png" class="projects"> <!-- random image -->
-        <div class="caption center-align">
-          <h3><a href="https://github.com/oatterzongit/ondex">Ondex</a></h3>
-          <h5 class="light blue-text shadow">Always On Deck.</h5>
-        </div>
+        <img src="/assets/images/ondex.png" class="projects">
       </li>
       <li>
-        <img src="/assets/images/humansofpanda.png" class="projects"> <!-- random image -->
-        <div class="caption center-align">
-          <h3><a href="https://github.com/oatterzongit/panda_working">Humans of Panda</a></h3>
-          <h5 class="light blue-text shadow">Connect. Mingle. Share. This is Panda Family.</h5>
-        </div>
+        <img src="/assets/images/humansofpanda.png" class="projects">
       </li>
     </ul>
   </div>
@@ -161,28 +153,8 @@
         </div>
       </div>
     </div>
-    <div class="parallax"><img src="/assets/images/bg-2.jpg"></div>
+    <div class="parallax"><img src="/assets/images/bg1.jpeg"></div>
   </div>
-
-  <!-- <div class="container">
-    <div class="section">
-
-      <div class="row" id="resume">
-        <div class="col s12 center">
-          <h4>
-            My Resume
-          </h4>
-          <div class="center-align light">
-            <iframe src="https://resume.creddle.io/embed/3zn5r0bf3w5"
-              width="850" height="1100" seamless></iframe>
-          </div>
-        </div>
-      </div>
-
-
-    </div>
-  </div> -->
-
 
   <div class="container">
     <div class="row header">
@@ -194,17 +166,17 @@
           <li>
             <p class="">
               <label for="first_name">first name</label>
-              <input type="text" name="first_name" placeholder="John" />
+              <input type="text" name="first_name" placeholder="Jon" />
             </p>
             <p class="">
               <label for="last_name">last name</label>
-              <input type="text" name="last_name" placeholder="Smith" />
+              <input type="text" name="last_name" placeholder="Snow" />
             </p>
           </li>
           <li>
             <p>
               <label for="email">email <span class="req">*</span></label>
-              <input type="email" name="email" placeholder="john.smith@gmail.com" />
+              <input type="email" name="email" placeholder="lordcommander@castleblack.mil" />
             </p>
           </li>
           <li>
@@ -213,7 +185,7 @@
           </li>
 
           <li>
-            <input class="btn btn-submit" type="submit" value="Submit" />
+            <input class="btn btn-submit deep-orange" type="submit" value="Submit" />
             <small>or press <strong>enter</strong></small>
           </li>
 
